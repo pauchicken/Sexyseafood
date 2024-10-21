@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Fresh Salmon",
+        "price": 15.99,
+        "description": "Wild-caught Alaskan salmon"
+    },
+    {
+        "id": 2,
+        "name": "Jumbo Shrimp",
+        "price": 19.99,
+        "description": "Large, succulent shrimp"
+    },
+    {
+        "id": 3,
+        "name": "Tuna Steaks",
+        "price": 12.99,
+        "description": "Sushi-grade tuna steaks"
+    }
+]
