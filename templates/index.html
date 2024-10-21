@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seafood Marketplace</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌊 Seafood Marketplace 🐟</h1>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="buy">Buy Seafood</button>
+            <button class="tab-button" data-tab="sell">Sell Your Catch</button>
+        </div>
+        <div id="buy-tab" class="tab-content active">
+            <div id="product-list" class="product-grid"></div>
+        </div>
+        <div id="sell-tab" class="tab-content">
+            <form id="sell-form">
+                <input type="text" name="name" placeholder="Product Name" required>
+                <input type="number" name="price" step="0.01" placeholder="Price" required>
+                <input type="text" name="description" placeholder="Description" required>
+                <button type="submit">List Product</button>
+            </form>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-price"></p>
+            <p id="modal-description"></p>
+            <button id="buy-button">Buy Now</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
